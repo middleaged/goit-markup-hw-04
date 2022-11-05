@@ -326,6 +326,7 @@ ul {
 .social-icon {
   fill: currentColor;
 }
+/* Клієнти */
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -340,7 +341,8 @@ ul {
   align-items: center;
   gap: 30px;
 }
-.customers-item {
+
+.customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,14 +350,23 @@ ul {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--icons-color);
+}
+.customer-icon {
+  fill: var(--icons-color);
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent);
+}
+.customers-link:hover .customer-icon,
+.customers-link:focus .contacts-icon {
+  fill: var(--accent);
 }
 /* Футер */
 .basement {
   background-color: var(--secound-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
+
 .logo-basement {
   font-family: "Raleway";
   font-weight: 700;
@@ -389,7 +400,49 @@ ul {
 .adress-item:focus {
   color: var(--accent);
 }
+.footer-content {
+  display: flex;
+}
+.webstudio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 70px;
+}
+.footer-join-social {
+  padding-top: 72px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent);
+}
+.icon-footer {
+  fill: var(--main-background-color);
+}
 /* Портфоліо */
 .filters-container {
   display: flex;
@@ -456,6 +509,11 @@ ul {
 }
 .porfolio-item:nth-child(n + 4) {
   margin-top: 30px;
+}
+.porfolio-item:hover,
+.porfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .text-container {
   padding: 20px 24px;
