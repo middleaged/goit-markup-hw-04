@@ -122,7 +122,6 @@ ul {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-
   font-weight: 500;
   line-height: 1.17;
 }
