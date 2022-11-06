@@ -219,6 +219,7 @@ ul {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .feature-list-item {
@@ -358,7 +359,7 @@ ul {
   border-color: var(--accent);
 }
 .customers-link:hover .customer-icon,
-.customers-link:focus .contacts-icon {
+.customers-link:focus .customer-icon {
   fill: var(--accent);
 }
 /* Футер */
